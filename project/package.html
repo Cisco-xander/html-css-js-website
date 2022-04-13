@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Database server</title>
+
+   <!-- swiper css link  -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<section class="header">
+
+   <a href="home.html" class="logo">Data Base Server</a>
+
+   <nav class="navbar">
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="package.html">Database Server</a>
+      <a href="registration.html">Registration</a>
+   </nav>
+
+   <div id="menu-btn" class="fas fa-bars"></div>
+
+</section>
+
+<!-- header section ends -->
+
+<div class="heading" style="background:url(images/header-bg-2.png) no-repeat">
+   <h1>packages</h1>
+</div>
+
+<!-- packages section starts  -->
+
+<section class="packages">
+
+   <h1 class="heading-title">Introduction</h1>
+
+   <div class="box-container">
+
+      <div class="box">
+         
+         <div class="content">
+            <h3>adventure & tour</h3>
+            <p>A database server runs a database management system and provides database services to clients. The server manages data access and retrieval and completes clients’ requests.</p>
+            <p></p>
+         </div>
+      </div>
+
+      <div class="box">
+       
+         <div class="content">
+            <h3>Database defination</h3>
+            <p>A database server is a machine running database software dedicated to providing database services. It is a crucial component in the client-server computing environment where it provides business-critical information requested by the client systems.</p>
+
+               <p>A database server consists of hardware and software that run a database.</p>
+               
+               <p>The software side of a database server, or the database instance, is the back-end database application.</p>
+               
+               <p>The application represents a set of memory structures and background processes accessing a set of database files.</p>
+               
+               <p>The hardware side of a database server is the server system used for database storage and retrieval.</p>
+               
+               <p>Database workloads require a large storage capacity and high memory density to process data efficiently. These requirements mean that the machine hosting the database is usually a dedicated high-end computer.</p>
+            
+         </div>
+      </div>
+
+      <div class="box">
+      
+         <div class="content">
+            <h3>Uses of Database Server</h3>
+            <p>Database servers have several use cases. Some of them are:
+
+               Dealing with large amounts of data regularly.
+               Database servers shine in a client-server architecture, where the clients frequently process data.
+               
+               Managing the recovery and security of the DBMS.
+               Database servers carry out the constraints specified within the DBMS (database management system). The server controls and manages all the clients connected to it and handles all database access and control requests.
+               
+               Providing concurrent access control.
+               Database servers provide a multi-user environment where many users can access the database simultaneously while maintaining security and hiding the DBMS from the clients.
+               
+               Storing applications and non-database files.
+               Some organizations use database servers as a much more efficient solution compared to file servers.</p>
+            
+         </div>
+      </div>
+
+      <div class="box">
+        
+         <div class="content">
+            <h3>How it works</h3>
+            <p>The database server stores the Database Management System (DBMS) and the database itself. Its main role is to receive requests from client machines, search for the required data, and pass back the results.</p>
+            <p>The DBMS provides database server functionality, and some DBMSs (e.g., MySQL) provide database access only via the client-server model. Other DBMSs (such as SQLite) are used for embedded databases.
+
+               Clients access a database server through a front-end application that displays the requested data on the client machine, or through a back-end application that runs on the server and manages the database.
+               
+               The ODBC (Open Database Connectivity) standard provides the API allowing clients to call the DBMS. ODBC requires necessary software on both the client and server sides.
+               
+               In a master-slave model, the database master server is the primary data location. Database slave servers are replicas of the master server that act as proxies.</p>
+           
+         </div>
+      </div>
+
+      <div class="box">
+        
+         <div class="content">
+            <h3>Examples</h3>
+            <p>The following is a list of some well-known and widely used database servers. The list is not exhaustive and there are many other solutions on the market.
+
+               <h4>MySQL</h4>
+               MySQL is an SQL-based open-source Relational Database Management System (RDBMS). MySQL comes in a free and paid version, and it supports Linux and Windows. The system offers native, real-time analytics and unified service for OLAP and OLTP databases.
+               
+               The free version offers most of the necessary functionalities and has several available user interfaces.
+               
+               <h4>PostgreSQL</h4>
+               PostgreSQL is an advanced object-relational DBMS. PostgreSQL was designed to allow users to add custom functions using different programming languages, including C/C++, Java, etc.
+               
+               PostgreSQL supports Windows and Linux, and its characteristics are excellent data security and fast data retrieval.
+               
+               <h4>SQL Server</h4>
+               Microsoft SQL Server is a relational database management system primarily used to store and retrieve data requested by other applications. MSSQL Server allows many users to access the same database concurrently.
+               
+               Microsoft’s SQL Server supports several programming languages, such as Assembly, C/C++, Linux, and operates on Windows and Linux.
+               
+               <h4>SQLite</h4>
+               SQLite is an open-source database management system written in the C programming language. SQLite stores data to a text file on a device. It is widespread and supports Mac, Windows, and Linux operating systems.
+               
+               SQLite is suitable for small or medium-size databases.
+               
+               <h4>MS Access</h4>
+               Microsoft Access is a database management system that allows users to store information for reference, reporting, and analysis. Microsoft Access helps users analyze large data sets and manage the data better than Microsoft Excel or other spreadsheet applications.
+               
+               Microsoft Access supports Microsoft Windows, and it is the primary choice for e-commerce websites.
+               
+               <h4>AP HANA</h4>
+               SAP HANA is a column-oriented RDBMS developed by SAP SE. The system’s primary function is to store and retrieve data as requested by client applications. It supports many different types of applications.
+               
+               SAP HANA supports OLTP, OLAP, and SQL, and it can manage SAP and non-SAP data.
+               
+               <h4>DBM Db2</h4>
+               IBM Db2 is an RDBMS that delivers data to its IBM data server clients. Db2 is written in C/C++ and Assembly. It is NoSQL-based and supports JSON and XML file types.
+               
+               Db2 supports Linux, UNIX, and Windows platforms.
+               
+               <h4>MariaDB</h4>
+               The MariaDB database management system is available as a free and paid version. It boasts efficient resource usage due to an optimizer that increases query performance and processing.  
+               
+               MariaDB offers multi-core support and multi-thread database access in real-time.
+               
+               Users can choose from a range of storage engines. The server operates on Windows, Linux, UNIX, and Mac.
+               
+               <h4>Oracle</h4>
+               Oracle offers one of the most popular, object-relational DBMS. Its latest version includes a wide range of multi-model, multi-workload, and multi-tenant enhancements.
+               
+               The DBMS supports binary JSON and offers ten times faster data scans compared to previous versions. Windows, Linux, and many UNIX operating systems versions are supported.
+               
+               <h4>MongoDB Atlas</h4>
+               The MongoDB database system is available as a free and commercial version. MongoDB is developed for applications that use structured and unstructured data, and its engine supports JSON and NoSQL documents.</p>
+            
+         </div>
+      </div>
+
+      <div class="box">
+         
+         <div class="content">
+            <h3>Conclusion</h3>
+            <p>You now know what a database server is, how it works, and some of its common use cases.
+
+               Feel free to experiment with different solutions and test out the free ones to see if they are worth the upgrade.</p>
+            
+         </div>
+      </div>
+
+  </div>
+
+
+   </div>
+
+   <div class="load-more"><span class="btn">load more</span></div>
+
+</section>
+
+<!-- packages section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+   <div class="box-container">
+
+      <div class="box">
+         <h3>quick links</h3>
+         <a href="home.html"> <i class="fas fa-angle-right"></i> Home</a>
+         <a href="about.html"> <i class="fas fa-angle-right"></i> About</a>
+         <a href="package.html"> <i class="fas fa-angle-right"></i> Database Server</a>
+         <a href="registration.html"> <i class="fas fa-angle-right"></i> Registration</a>
+      </div>
+
+      <div class="box">
+         <h3>extra links</h3>
+         <a href="#"> <i class="fas fa-angle-right"></i> ask questions</a>
+         <a href="#"> <i class="fas fa-angle-right"></i> about us</a>
+         <a href="#"> <i class="fas fa-angle-right"></i> privacy policy</a>
+         <a href="#"> <i class="fas fa-angle-right"></i> terms of use</a>
+      </div>
+
+      <div class="box">
+         <h3>contact info</h3>
+         <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+         <a href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+         <a href="#"> <i class="fas fa-envelope"></i> breezyxander11@gmail.com </a>
+         <a href="#"> <i class="fas fa-map"></i> meru, kenya - 400104 </a>
+      </div>
+
+      <div class="box">
+         <h3>follow us</h3>
+         <a href="https://web.facebook.com/?_rdc=1&_rdr"> <i class="fab fa-facebook-f"></i> facebook </a>
+         <a href="https://twitter.com/home"> <i class="fab fa-twitter"></i> twitter </a>
+         <a href="https://www.instagram.com/"> <i class="fab fa-instagram"></i> instagram </a>
+         <a href="https://ke.linkedin.com/"> <i class="fab fa-linkedin"></i> linkedin </a>
+      </div>
+
+   </div>
+
+   <div class="credit"> created by <span>Cisco Industries</span> | all rights reserved! </div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+<!-- swiper js link  -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

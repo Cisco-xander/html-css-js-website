@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>home</title>
+
+   <!-- swiper css link  -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+<!-- Header -->
+<section id="header">
+   <div class="header container">
+     <div class="nav-bar">
+       <div class="brand">
+         <a href="#hero">
+           <h1><span>C</span>isco <span>X</span>ander</h1>
+         </a>
+       </div>
+       <div class="nav-list">
+         <div class="hamburger">
+           <div class="bar"></div>
+         </div>
+        
+ </section>
+ <!-- End Header -->
+
+<section class="header">
+
+   <a href="home.html" class="logo">Presentation</a>
+
+   <nav class="navbar">
+      <a href="home.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="package.html">Database Server</a>
+      <a href="registration.html">Registration</a>
+   </nav>
+
+   <div id="menu-btn" class="fas fa-bars"></div>
+
+</section>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Linux Boot Process</title>
+</head>
+
+<body>
+
+
+
+<!-- Hero Section  -->
+<section id="hero">
+  <div class="hero container">
+    <div>
+      <h1>Hello, <span></span></h1>
+      <h1>THIS IS <span></span></h1>
+      <h1>GROUP TWO<span></span></h1>
+      <a href="#projects" type="button" class="cta">Portfolio</a>
+    </div>
+  </div>
+</section>
+<!-- End Hero Section  -->
+
+<!-- Boot Processes-->
+<section id="Boot Process">
+  <div class="boot processes">
+    <div class="service-top">
+      <h1 class="section-title">Boo<span>ting</span>process</h1>
+
+      <h3 id="1-bios"><strong>1. BIOS</strong></h3>
+      <p>BIOS stands for Basic Input/Output System. In simple terms, the BIOS loads and executes the Master Boot Record (MBR) boot loader. </p>
+      <p>When you first turn on your computer, the BIOS first performs some integrity checks of the HDD or SSD.</p>
+      <p>Then, the BIOS searches for, loads, and executes the boot loader program, which can be found in the Master Boot Record (MBR). The MBR is sometimes on a USB stick or CD-ROM such as with a live installation of Linux.</p>
+      <p>Once the boot loader program is detected, it's then loaded into memory and the BIOS gives control of the system to it.</p>
+      <h3 id="2-mbr"><strong>2. MBR</strong></h3>
+
+      <p>MBR stands for Master Boot Record, and is responsible for loading and executing the GRUB boot loader. </p>
+      <p>The MBR is located in the 1st sector of the bootable disk, which is typically <code>/dev/hda</code>, or <code>/dev/sda</code>, depending on your hardware. The MBR also contains information about GRUB, or LILO in very old systems.</p>
+      <h3 id="3-grub"><strong>3. GRUB</strong></h3>
+      <p>Sometimes called GNU GRUB, which is short for GNU GRand Unified Bootloader, is the typical boot loader for most modern Linux systems.</p>
+      <p>The GRUB splash screen is often the first thing you see when you boot your computer. It has a simple menu where you can select some options. If you have multiple kernel images installed, you can use your keyboard to select the one you want your system to boot with. By default, the latest kernel image is selected.</p>
+
+      <h3 id="4-kernel"><strong>4. Kernel</strong></h3>
+      <p>The kernel is often referred to as the core of any operating system, Linux included. It has complete control over everything in your system.</p>
+      <p>The kernel then establishes a temporary root file system using Initial RAM Disk (initrd) until the real file system is mounted.</p>
+      <p>At this point, your system executes runlevel programs. At one point it would look for an init file, usually found at <code>/etc/inittab</code> to decide the Linux run level.</p>
+      <p>The kernel then establishes a temporary root file system using Initial RAM Disk (initrd) until the real file system is mounted.</p>
+
+      <h3 id="5-init"><strong>5. Init</strong></h3>
+      <p>At this point, your system executes runlevel programs. At one point it would look for an init file, usually found at <code>/etc/inittab</code> to decide the Linux run level.</p>
+      <p>Modern Linux systems use systemd to choose a run level instead. According to <a href="https://www.tecmint.com/change-runlevels-targets-in-systemd/">TecMint</a>, these are the available run levels:</p>
+      <blockquote><strong>Run level 0</strong> is matched by <strong>poweroff.target</strong> (and <strong>runlevel0.target</strong> is a symbolic link to <strong>poweroff.target</strong>).<br><br><strong>Run level 1</strong> is matched by <strong>rescue.target</strong> (and <strong>runlevel1.target </strong>is a symbolic link to <strong>rescue.target</strong>).<br><br><strong>Run level</strong> 3 is emulated by <strong>multi-user.target</strong> (and <strong>runlevel3.target</strong> is a symbolic link to <strong>multi-user.target</strong>).<br><br><strong>Run level 5</strong> is emulated by <strong>graphical.target</strong> (and <strong>runlevel5.target</strong> is a symbolic link to <strong>graphical.target</strong>).<br><br><strong>Run level 6</strong> is emulated by <strong>reboot.target</strong> (and <strong>runlevel6.target</strong> is a symbolic link to <strong>reboot.target</strong>).<br><br><strong>Emergency</strong> is matched by <strong>emergency.target</strong>.</blockquote>
+
+      <p>systemd will then begin executing runlevel programs.</p>
+      <h3 id="6-runlevel-programs"><strong>6. Runlevel programs</strong></h3>
+      <p>Depending on which Linux distribution you have installed, you may be able to see different services getting started. For example, you might catch <code>starting sendmail …. OK</code>.</p>
+      <p>These are known as runlevel programs, and are executed from different directories depending on your run level. Each of the 6 runlevels described above has its own directory:</p>
+
+      <ul><li>Run level 0 – <code>/etc/rc0.d/</code></li><li>Run level 1 – <code>/etc/rc1.d/</code></li><li>Run level 2&hairsp; – <code>/etc/rc2.d/</code></li><li>Run level 3&hairsp; – <code>/etc/rc3.d/</code></li><li>Run level 4 – <code>/etc/rc4.d/</code></li><li>Run level 5 – <code>/etc/rc5.d/</code></li><li>Run level 6 – <code>/etc/rc6.d/</code></li></ul>
+      <p>Note that the exact location of these directories varies from distribution to distribution.</p>
+      <p>If you look in the different run level directories, you'll find programs that start with either an "S" or "K" for startup and kill, respectively. Startup programs are executed during system startup, and kill programs during shutdown.</p>
+      <p>That's everything you need to know about the Linux booting process. Now go out there and make proud.</p>
+   
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+   <div class="box-container">
+
+      <div class="box">
+         <h3>quick links</h3>
+         <a href="home.html"> <i class="fas fa-angle-right"></i> Home</a>
+         <a href="about.html"> <i class="fas fa-angle-right"></i> About</a>
+         <a href="package.html"> <i class="fas fa-angle-right"></i> Database Server</a>
+         <a href="registration.html"> <i class="fas fa-angle-right"></i> Registration</a>
+      </div>
+
+      <div class="box">
+         <h3>extra links</h3>
+         <a href="#"> <i class="fas fa-angle-right"></i> ask questions</a>
+         <a href="#"> <i class="fas fa-angle-right"></i> about us</a>
+         <a href="#"> <i class="fas fa-angle-right"></i> privacy policy</a>
+         <a href="#"> <i class="fas fa-angle-right"></i> terms of use</a>
+      </div>
+
+      <div class="box">
+         <h3>contact info</h3>
+         <a href="#"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+         <a href="#"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+         <a href="#"> <i class="fas fa-envelope"></i> breezyxander11@gmail.com </a>
+         <a href="#"> <i class="fas fa-map"></i> meru, kenya - 400104 </a>
+      </div>
+
+      <div class="box">
+         <h3>follow us</h3>
+         <a href="https://web.facebook.com/?_rdc=1&_rdr"> <i class="fab fa-facebook-f"></i> facebook </a>
+         <a href="https://twitter.com/home"> <i class="fab fa-twitter"></i> twitter </a>
+         <a href="https://www.instagram.com/"> <i class="fab fa-instagram"></i> instagram </a>
+         <a href="https://ke.linkedin.com/"> <i class="fab fa-linkedin"></i> linkedin </a>
+      </div>
+
+   </div>
+
+   <div class="credit"> created by <span>Cisco Industries</span> | all rights reserved! </div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+<!-- swiper js link  -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
